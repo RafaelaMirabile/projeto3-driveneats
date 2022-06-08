@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#E5E5E5;
+}
+header{
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 14px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF
+}
+span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.container{
+    margin-top: 134px;
+    margin-bottom: 134px;
+    margin-left: 16px;
+
+}
+.foodOptions{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.beverageOptions{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.desertOptions{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.beverage-container{
+    margin: 24px 0;
+}
+.food{
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 14px;
+    margin-right: 14px;
+}
+.beverage{
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 14px;
+    margin-right: 14px;
+}
+.desert{
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 14px;
+    margin-right: 14px;
+}
+h2{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-bottom: 14px;
+}
+h3{
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+    margin: 12px 0;
+}
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+footer{
+    background: #FFFFFF;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin-top: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: #CBCBCB;
+    border-radius: 50px;
+    border-color: #CBCBCB;
+    width: 440px;
+    height: 84px;
+    text-align: center;
+;
+}
+button p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
