@@ -16,6 +16,7 @@
         <span>Sua comida em 6 minutos</span>
     </header>
     <div class="container">
+        <div class="confirmOrder"></div>
         <div class="mainCourse-container">
             <h2>Primeiro, seu prato</h2>
             <div class="foodOptions">
@@ -52,7 +53,7 @@
                     <img src="images/sake_Naruto.jpg" alt="sake_Naruto">
                     <h3>Sake Rock Lee</h3>
                     <p>Desativa o Punho Embriagado 500ml</p>
-                    <h4> R$ <span class="price">30,90</span></h4>
+                    <h4> R$ <span class="price">30,95</span></h4>
                 </div>
                 <div class="beverage" onclick="selectedBeverage(this)">
                     <img src="images/ama.jpg" alt="amazake">
@@ -107,7 +108,7 @@
         </div>
     </div>
     <footer>
-        <button>
+        <button class="orderButton" onclick="sendOrder()">
             <p>Selecione os 3 itens</p>
             <p>para fechar o pedido</p>
         </button>
