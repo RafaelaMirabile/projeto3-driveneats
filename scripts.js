@@ -89,7 +89,16 @@ function sendOrder(){
     <div class="verify"><button onclick="sendMessage()">Tudo certo, pode pedir!</button></div>
     <div class="cancel">Cancelar</div>`
 }
-
+function sendMessage(){
+    const uri= `Ola, gostaria de fazer o pedido:\n
+    - Prato: ${foodName}\n
+    - Bebida: ${beverageName}\n 
+    - Sobremesa: ${dessertName}\n
+      Total: R$ ${ttt}\n`
+      
+      const uriEncoded= encodeURIComponent(uri);
+      window.open(`https://wa.me/5541999999999?text=${uriEncoded}`);
+}
 
 
 
