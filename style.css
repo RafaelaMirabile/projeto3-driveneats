@@ -150,9 +150,6 @@ button p{
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     position: fixed;
-    top: 36%;
-    left: 50%;
-    margin: 0 -180px;
     padding: 10px;
     width: 377px;
     height: 357px;
@@ -233,6 +230,9 @@ h6 , .total{
     z-index: 7;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .food > ion-icon , .dessert > ion-icon , .beverage > ion-icon{
     color: white;
