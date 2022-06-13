@@ -77,11 +77,9 @@ function sendOrder(){
     foodName = document.querySelector(".foodOptions .selectedItem1 h3").innerHTML;
     beverageName =document.querySelector(".beverageOptions .selectedItem2 h3").innerHTML;
     dessertName = document.querySelector(".dessertOptions .selectedItem3 h3").innerHTML;
-    
 
     trans = document.querySelector(".transparency");
     trans.classList.add("transparencyLayer");
-    
     
     sOrder = document.querySelector(".confirmOrder");
     console.log(sOrder);
