@@ -60,7 +60,6 @@ function selectedDessert(greenDessert){
 
 function selectedButton(){
     let greenButton = document.querySelector(".orderButton");
-    console.log(mainItem, dessertItem, beverageItem);
     if(mainItem !== undefined && dessertItem !== undefined && beverageItem !== undefined){
         greenButton.classList.add("greenBackground");
         greenButton.innerHTML ='Fechar pedido';
@@ -82,7 +81,7 @@ function sendOrder(){
     trans.classList.add("transparencyLayer");
     
     sOrder = document.querySelector(".confirmOrder");
-    console.log(sOrder);
+
     sOrder.classList.add('confirmOrderInline');
     sOrder.innerHTML=`<h6>Confirme seu Pedido</h6>
     <div class="orders">
@@ -106,6 +105,28 @@ function sendMessage(){
       
       const uriEncoded= encodeURIComponent(uri);
       window.open(`https://wa.me/5541999999999?text=${uriEncoded}`);
+}
+
+function cancel(){
+    trans.classList.add("none");
+
+    let greenFoodSelected = document.querySelector(".foodOptions .selectedItem1");
+    greenFoodSelected.classList.remove("selectedItem1");
+
+    let greenBeverageSelected = document.querySelector(".beverageOptions .selectedItem2");
+    greenBeverageSelected.classList.remove("selectedItem2");
+
+    let greenDessertSelected = document.querySelector(".dessertOptions .selectedItem3");
+    greenDessertSelected.classList.remove("selectedItem3");
+
+    mainItem = undefined;
+    dessertItem = undefined;
+    beverageItem = undefined;
+
+    let background = document.querySelector("footer .greenBackground");
+    console.log(background);
+    background.classList.remove("greenBackground");
+    background.innerHTML = '<p>Selecione os 3 itens</p><p>para fechar o pedido</p>'
 }
 
 
