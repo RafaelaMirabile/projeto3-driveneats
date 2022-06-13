@@ -162,7 +162,7 @@ button p{
 .confirmOrderInline{
     display: inline;
 }
-h6 , .total{
+h6, .total{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -235,13 +235,19 @@ h6 , .total{
     align-items: center;
 }
 .food > ion-icon , .dessert > ion-icon , .beverage > ion-icon{
-    color: white;
+    background-color: green;
     margin-left: 126px;
     position: absolute;
     margin-top: 178px;
+    border-radius: 9px;
+    opacity: 0;
 }
 .selectedItem1 > ion-icon, .selectedItem2 > ion-icon , 
 .selectedItem3 > ion-icon {
     border-radius: 9px;
-    background-color: green;
+    opacity: 1;
 }
+.none{
+    display: none;
+}
+
